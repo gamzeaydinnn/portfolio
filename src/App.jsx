@@ -273,7 +273,7 @@ function App() {
               </button>
             </div>
             <img
-              src="public/images/todo-uygulamasi-ss.png"
+              src="/images/todo-uygulamasi-ss.png"
               alt="Todo Uygulaması Ekran Görüntüsü"
               style={{
                 width: "100%",
@@ -389,7 +389,7 @@ function App() {
               </button>
             </div>
             <img
-              src="public/images/hepsiburada-otomasyon-ss.png"
+              src="/images/hepsiburada-otomasyon-ss.png"
               alt="Hepsiburada Otomasyonu Ekran Görüntüsü"
               style={{
                 width: "100%",
@@ -496,7 +496,7 @@ function App() {
             }}
           >
             <img
-              src="public/images/gamze-profil.jpg"
+              src="/images/gamze-profil.jpg"
               alt="Gamze Aydın Profil Fotoğrafı"
               style={{
                 width: "170px",
@@ -818,7 +818,7 @@ function App() {
                   <span className="experience-icon">
                     {/* Atakum Belediyesi Logo */}
                     <img
-                      src="public/images/atakum-belediyesi-logo.jpg"
+                      src="/images/atakum-belediyesi-logo.jpg"
                       alt="Atakum Belediyesi"
                       style={{
                         width: "2.2rem",
@@ -922,7 +922,7 @@ function App() {
                   <span className="experience-icon">
                     {/* SecureComputing Logo */}
                     <img
-                      src="public/images/securecomputing-logo.jpg"
+                      src="/images/securecomputing-logo.jpg"
                       alt="SecureComputing"
                       style={{
                         width: "2.2rem",
@@ -1042,7 +1042,7 @@ function App() {
                 >
                   {/* Stok Takip Sistemi Geniş Görsel */}
                   <img
-                    src="public/images/inditex-stok-takip-paneli-ss.png"
+                    src="/images/inditex-stok-takip-paneli-ss.png"
                     alt="Inditex Stok Takip Paneli Ekran Görüntüsü"
                     style={{
                       width: "100%",
@@ -1129,7 +1129,7 @@ function App() {
                 <div className="project-icon-bg">
                   {/* Todo Uygulaması Ekran Görüntüsü */}
                   <img
-                    src="public/images/todo-uygulamasi-ss.png"
+                    src="/images/todo-uygulamasi-ss.png"
                     alt="Todo Uygulaması Ekran Görüntüsü"
                     style={{
                       width: "100%",
@@ -1216,7 +1216,7 @@ function App() {
                 <div className="project-icon-bg">
                   {/* Not: 'src' kısmına yüklediğin görselin dosya yolunu yazmalısın. */}
                   <img
-                    src="public/images/hepsiburada-otomasyon-ss.png"
+                    src="/images/hepsiburada-otomasyon-ss.png"
                     alt="Hepsiburada Otomasyonu Ekran Görüntüsü"
                     style={{
                       width: "100%",
@@ -1422,7 +1422,7 @@ function App() {
                   >
                     {/* Ankara Medipol Üniversitesi Logo */}
                     <img
-                      src="public/images/ankara-medipol-logo.jpg"
+                      src="/images/ankara-medipol-logo.jpg"
                       alt="Ankara Medipol Üniversitesi"
                       style={{
                         width: "2.2rem",
