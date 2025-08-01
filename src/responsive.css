@@ -1,0 +1,103 @@
+/* responsive.css DOSYASININ TÜM İÇERİĞİ BU OLMALI */
+
+@media (max-width: 768px) {
+  /* --- Genel Sayfa Ayarları --- */
+  #root {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* --- Navbar (Üst Menü) --- */
+  /* Navbarda logo ve menü butonunu yan yana hizalar */
+  .portfolio-navbar {
+    display: flex;
+    justify-content: space-between; /* Logo ve menüyü iki uca yaslar */
+    align-items: center;
+    padding: 1rem 0; /* Üstten ve alttan boşluk */
+  }
+
+  /*
+    NAVBAR LİNKLERİ (About Me, Experience, etc.)
+    Normalde gizli olacak, sadece menü açıkken görünecek.
+  */
+  .navbar-links {
+    display: none; /* Mobil ekranda linkleri varsayılan olarak gizle */
+    flex-direction: column; /* Linkleri alt alta sırala */
+    gap: 1.5rem; /* Linkler arası boşluk */
+    position: absolute; /* Sayfa akışından kopar */
+    top: 80px; /* Navbarın hemen altına konumlandır (navbar yüksekliğine göre ayarlayın) */
+    left: 0;
+    width: 100%;
+    background-color: #192333; /* Arka plan rengi (sitenizin rengiyle uyumlu) */
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif gölge */
+    z-index: 1000; /* Diğer her şeyin üzerinde görünmesi için */
+  }
+
+  /* Menü açıldığında (JavaScript ile .menu-open class'ı eklendiğinde) linkleri göster */
+  .navbar-links.menu-open {
+    display: flex;
+  }
+
+  /*
+    HAMBURGER MENÜ BUTONU
+    Bu butonu HTML'e eklemeniz gerekecek.
+  */
+  .hamburger-menu {
+    display: block; /* Sadece mobilde görünsün */
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  /* Masaüstünde hamburger menüyü gizle (Eğer başka bir CSS dosyanız yoksa) */
+  @media (min-width: 769px) {
+    .hamburger-menu {
+      display: none;
+    }
+  }
+
+  /* --- Üst Kısım (Hero Bölümü) --- */
+  .portfolio-container {
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .portfolio-title {
+    font-size: 2.5rem; /* Başlık boyutu */
+  }
+
+  .portfolio-desc {
+    font-size: 1rem;
+    padding: 0 1rem; /* Kenarlardan biraz boşluk */
+  }
+
+  /* --- Bölüm Başlıkları (Projects, Experiences vb.) --- */
+  .projects-title,
+  .experiences-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .projects-desc,
+  .experiences-desc {
+    font-size: 1rem;
+    text-align: center;
+    padding: 0 0.5rem;
+  }
+
+  /* --- Projeler Bölümü --- */
+  /* Proje kartlarını tek sütunlu hale getirir */
+  .projects-list {
+    grid-template-columns: 1fr; /* Tüm kartları alt alta sıralar */
+    gap: 1.5rem;
+  }
+
+  /* --- Deneyimler Kartları --- */
+  .experience-card {
+    min-width: 100%; /* Kartın ekranı kaplamasını sağlar */
+  }
+}
