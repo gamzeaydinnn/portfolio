@@ -496,7 +496,7 @@ function App() {
             }}
           >
             <img
-              src={`${process.env.PUBLIC_URL}/images/gamze-profil.jpg`}
+              src={`/portfolio/images/gamze-profil.jpg`}
               alt="Gamze Aydın Profil Fotoğrafı"
               style={{
                 width: "170px",
