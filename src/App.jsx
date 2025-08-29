@@ -95,6 +95,7 @@ function App() {
   const [showStokModal, setShowStokModal] = useState(false);
   const [showTodoModal, setShowTodoModal] = useState(false);
   const [showHepsiburadaModal, setShowHepsiburadaModal] = useState(false);
+  const [showWishlistModal, setShowWishlistModal] = useState(false);
 
   return (
     <>
@@ -456,6 +457,148 @@ function App() {
           </div>
         </div>
       )}
+      {/* Modal for MyWishlist App */}
+      {showWishlistModal && (
+        <div
+          className="modal-overlay"
+          onClick={() => setShowWishlistModal(false)}
+        >
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                marginBottom: "16px",
+              }}
+            >
+              <h2 style={{ color: "#7c4dff", margin: 0, flex: 1 }}>
+                MyWishlist App
+              </h2>
+              <button
+                aria-label="Close"
+                style={{
+                  background: "none",
+                  border: "none",
+                  color: "#bfc7d5",
+                  fontSize: "2.5rem",
+                  cursor: "pointer",
+                  padding: 0,
+                  lineHeight: 1,
+                  marginLeft: "1.2rem",
+                }}
+                onClick={() => setShowWishlistModal(false)}
+              >
+                &times;
+              </button>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                gap: "1rem",
+                justifyContent: "center",
+                alignItems: "flex-start",
+                margin: "0 auto 1rem auto",
+                flexWrap: "wrap",
+              }}
+            >
+              <img
+                src={`/portfolio/images/wishlist-app-ss.png`}
+                alt="MyWishlist App Ana Ekran"
+                style={{
+                  width: "100%",
+                  maxWidth: 180,
+                  height: "auto",
+                  display: "block",
+                  borderRadius: 12,
+                  boxShadow: "0 4px 16px 0 rgba(78, 161, 247, 0.15)",
+                  border: "2px solid #232b3a",
+                  background: "#f5f7fa",
+                  objectFit: "contain",
+                }}
+              />
+              <img
+                src={`/portfolio/images/Ekran görüntüsü 2025-08-29 232551.png`}
+                alt="MyWishlist App Detay Ekran"
+                style={{
+                  width: "100%",
+                  maxWidth: 180,
+                  height: "auto",
+                  display: "block",
+                  borderRadius: 12,
+                  boxShadow: "0 4px 16px 0 rgba(78, 161, 247, 0.15)",
+                  border: "2px solid #232b3a",
+                  background: "#f5f7fa",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                color: "#bfc7d5",
+                fontSize: "1.08rem",
+                marginBottom: 12,
+              }}
+            >
+              MyWishListApp is a modern Android application built with Kotlin
+              and Jetpack Compose. It allows users to create and manage a
+              personal wishlist with features like:
+              <br />
+              <br />
+              <strong>Add, Edit, Delete</strong> wishlist items
+              <br />
+              <strong>Set priority levels</strong> (Low, Medium, High)
+              <br />
+              <strong>Local data persistence</strong> with SQLite (Room)
+              <br />
+              <strong>Voice input support</strong> for adding items via
+              microphone
+              <br />
+              <strong>Clean and responsive UI</strong> following the MVVM
+              architecture
+              <br />
+              <br />
+              This project demonstrates my skills in Android development, modern
+              UI design, database integration, and voice recognition
+              technologies.
+            </div>
+            <div className="project-tags">
+              <span>Kotlin</span>
+              <span>Jetpack Compose</span>
+              <span>Android</span>
+              <span>SQLite</span>
+              <span>MVVM</span>
+            </div>
+            <div
+              style={{ display: "flex", gap: "0.5rem", marginTop: "1.2rem" }}
+            >
+              <a
+                href="https://github.com/gamzeaydinnn/MyWishListApp"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="GitHub"
+                style={{
+                  color: "#fff",
+                  textDecoration: "none",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "0.3rem",
+                }}
+              >
+                <svg
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.479C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" />
+                </svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      )}
       <div className="portfolio-bg">
         <div className="portfolio-container">
           <button className="portfolio-opportunity">
@@ -533,8 +676,8 @@ function App() {
             <button className="portfolio-main-btn">Explore My Projects</button>
             <a
               className="portfolio-cv-btn"
-              href="/GAMZE AYDIN (6).pdf"
-              download
+              href="/portfolio/GAMZE%20AYDIN%20(7).pdf"
+              download="GAMZE_AYDIN_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -1121,42 +1264,43 @@ function App() {
                   </div>
                 </div>
               </div>
-              {/* Proje Kartı 2 */}
+              {/* Proje Kartı 2 - MyWishlist App */}
               <div
                 className="project-card project-anim"
                 style={{ animationDelay: "0.2s" }}
               >
                 <div className="project-icon-bg">
-                  {/* Todo Uygulaması Ekran Görüntüsü */}
                   <img
-                    src={`/portfolio/images/todo-uygulamasi-ss.png`}
-                    alt="Todo Uygulaması Ekran Görüntüsü"
+                    src={`/portfolio/images/Ekran görüntüsü 2025-08-29 232227.png`}
+                    alt="MyWishlist App Ekran Görüntüsü"
                     style={{
                       width: "100%",
-                      maxWidth: "420px",
+                      maxWidth: "100%",
                       height: "auto",
                       display: "block",
                       margin: "0 auto",
-                      borderRadius: "22px",
+                      borderRadius: "16px",
                       boxShadow: "0 8px 32px 0 rgba(78, 161, 247, 0.18)",
-                      border: "3px solid #232b3a",
-                      background: "#f5f7fa",
-                      objectFit: "cover",
+                      border: "2px solid #232b3a",
+                      background: "#181922",
+                      objectFit: "contain",
+                      objectPosition: "center",
                     }}
                   />
                 </div>
                 <div className="project-content">
-                  <h4 className="project-title">To Do App</h4>
+                  <h4 className="project-title">MyWishlist App</h4>
                   <p className="project-desc">
-                    A full-stack todo application designed to implement backend
-                    and database operations end-to-end in modern web
-                    applications, providing task management.
+                    A modern Android application built with Kotlin and Jetpack
+                    Compose for creating and managing personal wishlists with
+                    voice input support and local data persistence.
                   </p>
                   <div className="project-tags">
-                    <span>JavaScript</span>
-                    <span>Node.js</span>
-                    <span>MongoDB</span>
-                    <span>RESTful API</span>
+                    <span>Kotlin</span>
+                    <span>Jetpack Compose</span>
+                    <span>Android</span>
+                    <span>SQLite</span>
+                    <span>MVVM</span>
                   </div>
                   <div
                     style={{
@@ -1166,7 +1310,7 @@ function App() {
                     }}
                   >
                     <a
-                      href="https://github.com/gamzeaydinnn/to-do-app"
+                      href="https://github.com/gamzeaydinnn/MyWishListApp"
                       target="_blank"
                       rel="noopener noreferrer"
                       title="GitHub"
@@ -1193,7 +1337,7 @@ function App() {
                       style={{
                         padding: "0.4rem 1.2rem",
                         fontSize: "1rem",
-                        background: "#4ea1f7", // Mavi renk
+                        background: "#4ea1f7",
                         color: "#fff",
                         border: "none",
                         borderRadius: "8px",
@@ -1201,7 +1345,7 @@ function App() {
                         fontWeight: 600,
                         cursor: "pointer",
                       }}
-                      onClick={() => setShowTodoModal(true)}
+                      onClick={() => setShowWishlistModal(true)}
                     >
                       Demo
                     </button>
@@ -1291,6 +1435,93 @@ function App() {
                         cursor: "pointer",
                       }}
                       onClick={() => setShowHepsiburadaModal(true)} // Bu fonksiyon modal'ı açacak
+                    >
+                      Demo
+                    </button>
+                  </div>
+                </div>
+              </div>
+              {/* Proje Kartı 4 - Todo App */}
+              <div
+                className="project-card project-anim"
+                style={{ animationDelay: "0.4s" }}
+              >
+                <div className="project-icon-bg">
+                  {/* Todo Uygulaması Ekran Görüntüsü */}
+                  <img
+                    src={`/portfolio/images/todo-uygulamasi-ss.png`}
+                    alt="Todo Uygulaması Ekran Görüntüsü"
+                    style={{
+                      width: "100%",
+                      maxWidth: "420px",
+                      height: "auto",
+                      display: "block",
+                      margin: "0 auto",
+                      borderRadius: "22px",
+                      boxShadow: "0 8px 32px 0 rgba(78, 161, 247, 0.18)",
+                      border: "3px solid #232b3a",
+                      background: "#f5f7fa",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+                <div className="project-content">
+                  <h4 className="project-title">To Do App</h4>
+                  <p className="project-desc">
+                    A full-stack todo application designed to implement backend
+                    and database operations end-to-end in modern web
+                    applications, providing task management.
+                  </p>
+                  <div className="project-tags">
+                    <span>JavaScript</span>
+                    <span>Node.js</span>
+                    <span>MongoDB</span>
+                    <span>RESTful API</span>
+                  </div>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "0.5rem",
+                      marginTop: "1rem",
+                    }}
+                  >
+                    <a
+                      href="https://github.com/gamzeaydinnn/to-do-app"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="GitHub"
+                      style={{
+                        color: "#fff",
+                        textDecoration: "none",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.3rem",
+                      }}
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        fill="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path d="M12 2C6.477 2 2 6.484 2 12.021c0 4.428 2.865 8.184 6.839 9.504.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.339-2.221-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.987 1.029-2.687-.103-.254-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.025A9.564 9.564 0 0 1 12 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.748-1.025 2.748-1.025.546 1.378.202 2.396.1 2.65.64.7 1.028 1.594 1.028 2.687 0 3.847-2.337 4.695-4.566 4.944.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.749 0 .267.18.577.688.479C19.138 20.2 22 16.447 22 12.021 22 6.484 17.523 2 12 2z" />
+                      </svg>
+                      GitHub
+                    </a>
+                    <button
+                      className="portfolio-main-btn"
+                      style={{
+                        padding: "0.4rem 1.2rem",
+                        fontSize: "1rem",
+                        background: "#4ea1f7",
+                        color: "#fff",
+                        border: "none",
+                        borderRadius: "8px",
+                        boxShadow: "0 0 8px #4ea1f799",
+                        fontWeight: 600,
+                        cursor: "pointer",
+                      }}
+                      onClick={() => setShowTodoModal(true)}
                     >
                       Demo
                     </button>

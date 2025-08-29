@@ -198,6 +198,12 @@
   gap: 0.7rem;
   margin-left: 1.2rem;
 }
+
+/* Hamburger menu masaüstünde gizli */
+.hamburger-menu {
+  display: none;
+}
+
 .navbar-social-icon {
   display: flex;
   align-items: center;
@@ -902,7 +908,6 @@ body,
     #252b47 100%
   );
   background-size: 200% 200%;
-  animation: radialPulse 8s ease-in-out infinite;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -911,30 +916,7 @@ body,
   overflow: hidden;
 }
 
-/* Animasyonlu radial gradient efekti */
-@keyframes radialPulse {
-  0%,
-  100% {
-    background: radial-gradient(
-      ellipse at center,
-      #000000 0%,
-      #0a0e1a 30%,
-      #1a1f35 60%,
-      #252b47 100%
-    );
-    background-size: 100% 100%;
-  }
-  50% {
-    background: radial-gradient(
-      ellipse at center,
-      #0a0e1a 0%,
-      #1a1f35 40%,
-      #252b47 70%,
-      #2d3561 100%
-    );
-    background-size: 120% 120%;
-  }
-}
+/* Radial pulse animasyonu kaldırıldı - statik arka plan */
 
 /* Hero için özel parçacık sistemi */
 .portfolio-bg::before {
@@ -1761,4 +1743,17 @@ a[href*="demo"]:hover {
 body,
 #root {
   overflow-x: hidden;
+}
+
+/* Mobil için daha açık arka plan */
+@media (max-width: 768px) {
+  .portfolio-bg {
+    background: radial-gradient(
+      ellipse at center,
+      #0f1830 0%,
+      #1a2550 30%,
+      #161d44 60%,
+      #172151 100%
+    );
+  }
 }
