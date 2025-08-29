@@ -1,20 +1,21 @@
-# Portfolyo
+# Portfolio
 
-Bu proje, modern ve lacivert temalı bir React portfolyo sitesidir. Girişte isim, başlık, açıklama, etiketler ve iki buton (Portfolyomu İncele, CV İndir) bulunur.
+This project is a modern, navy-themed React portfolio website.  
+On the landing section, it displays a name, title, description, tags, and two buttons (View Portfolio, Download CV).
 
-## Başlatmak için
+## Getting Started
 
-1. Bağımlılıkları yükleyin:
+1. Install dependencies:
    ```shell
    npm install
-   ```
-2. Geliştirme sunucusunu başlatın:
-   ```shell
-   npm run dev
-   ```
+2.Start the development server:
+shell
+npm run dev
 
-## Özellikler
+Features
 
-- Lacivert arka plan
-- Modern tipografi ve butonlar
-- Girişte isim, başlık, açıklama, etiketler ve iki buton
+Navy blue background
+
+Modern typography and buttons
+
+Landing section with name, title, description, tags, and two buttons
