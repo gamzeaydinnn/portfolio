@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const basePath = '/portfolio'
+
 const nextConfig = {
   // React strict mode - development sırasında potential problemleri yakalar
   reactStrictMode: true,
@@ -13,10 +15,12 @@ const nextConfig = {
   output: 'export',
   
   // GitHub Pages base path (repo name)
-  //basePath: '/Portfolio',
-  
-  // Asset prefix for GitHub Pages
-  //assetPrefix: '/Portfolio',
+  basePath,
+  assetPrefix: basePath,
+
+  env: {
+    NEXT_PUBLIC_BASE_PATH: basePath,
+  },
   
   // Image optimization ayarları - static export için unoptimized gerekli
   images: {

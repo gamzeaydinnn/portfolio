@@ -24,6 +24,7 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { BackgroundLines } from "@/components/ui/background-lines";
 import { AnimatedSocialCard } from "@/components/ui/animated-social-card";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { withBasePath } from "@/lib/path";
 
 /**
  * Sosyal medya hesap bilgileri
@@ -197,7 +198,7 @@ export default function PersonalInfoPage() {
 
                         <div className="relative overflow-hidden rounded-2xl border-2 border-purple-500/40 shadow-xl shadow-purple-500/20">
                           <img
-                            src="/images/gamze-profile.png"
+                            src={withBasePath("/images/gamze-profile.png")}
                             alt="Gamze Aydın"
                             className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105"
                           />
@@ -209,7 +210,7 @@ export default function PersonalInfoPage() {
                     <div className="w-full mt-8 relative z-10">
                       <HoverBorderGradient
                         as="a"
-                        href="/GamzeCV.pdf"
+                        href={withBasePath("/GamzeCV.pdf")}
                         download="Gamze_Aydin_CV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -307,7 +308,7 @@ export default function PersonalInfoPage() {
 
                       <div className="relative overflow-hidden rounded-2xl border-2 border-purple-500/40 shadow-xl shadow-purple-500/20">
                         <img
-                          src="/images/gamze-profile.png"
+                          src={withBasePath("/images/gamze-profile.png")}
                           alt="Gamze Aydın"
                           className="w-[280px] h-[350px] object-cover transition-transform duration-500 group-hover:scale-105"
                         />

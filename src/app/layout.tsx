@@ -30,7 +30,7 @@ const inter = Inter({
  * Her sayfa kendi metadata'sını override edebilir
  */
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gamzeaydinnn.github.io'),
+  metadataBase: new URL('https://gamzeaydinnn.github.io/portfolio'),
   title: {
     default: 'Gamze Aydın',
     template: '%s | Gamze Aydın',
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    url: 'https://gamzeaydinnn.github.io/',
+    url: 'https://gamzeaydinnn.github.io/portfolio/',
     siteName: 'Gamze Aydın Portfolio',
     title: 'Gamze Aydın - Portfolio',
     description: 'Kişisel portfolyo websitem',

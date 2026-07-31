@@ -112,7 +112,7 @@ export function AppBar() {
               className="flex items-center space-x-2 group"
             >
               <img
-                src="/logo.png"
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/logo.png`}
                 alt="Gamze Aydın"
                 className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-200"
               />
