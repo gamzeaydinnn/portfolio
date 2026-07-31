@@ -25,6 +25,7 @@
 
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Image from 'next/image';
+import { withBasePath } from '@/lib/path';
 
 /**
  * Component Props Interface
@@ -224,7 +225,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 {/* Blur background - resmin scale ve blur edilmiş versiyonu */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <Image
-                    src={image}
+                    src={withBasePath(image)}
                     alt=""
                     fill
                     className="object-cover scale-110 blur-2xl opacity-40"
@@ -238,7 +239,7 @@ export const ImageCarousel: React.FC<ImageCarouselProps> = ({
                 {/* Ana görsel - object-contain ile tam görünür */}
                 <div className="absolute inset-0 w-full h-full flex items-center justify-center">
                   <Image
-                    src={image}
+                    src={withBasePath(image)}
                     alt={`${alt} - ${index + 1}`}
                     fill
                     className="object-contain"
