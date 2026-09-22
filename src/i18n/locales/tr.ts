@@ -86,8 +86,39 @@ export const tr: Translations = {
     technologies: "Teknolojiler",
     positions: [
       {
+        title: "Backend Geliştirici Stajyeri",
+        company: "Jotform",
+        logo: "/images/jotform.jpg",
+        period: "Ağu 2026 – Eyl 2026",
+        location: "Ankara, Türkiye",
+        type: "internship",
+        description: [
+          "Uçtan Uca Analitik Dashboard: Payment Analytics Dashboard için RESTful API mimarisini tasarladı ve summary, timeseries, breakdown, conversion dahil 8 temel analitik endpoint'ini uçtan uca geliştirdi.",
+          "Batch Processing & Ölçeklenebilirlik: Yüksek veri hacimli merchant hesaplarında meydana gelen bellek aşımı (OOM) ve HTTP 504 timeout sorunlarını çözmek için PHP generator (yield) tabanlı batch ingestion mekanizması (500'lük chunk'lar) kurguladı; API gecikmesini minimize ederek bellek tüketimini sabit tuttu.",
+          "Sorgu & Şema Optimizasyonu: Milyonlarca satırlık EAV tablolarında performans kaybına yol açan doğrudan cross-table JOIN operasyonları yerine in-memory aggregation ve çoklu set kesişimi (intersectOrderIdSets) ile optimize veri çekme pipeline'ları oluşturdu.",
+          "Veri Dışa Aktarımı & Güvenlik: Finansal verilerin Excel/Sheets aktarımı için streaming CSV export motoru geliştirdi; CSV formula-injection açıklarına karşı sanitizasyon ve UTF-8 BOM encoding koruması sağladı.",
+          "Çapraz Fonksiyonel İşbirliği: Frontend ekibiyle senkronize API kontratları belirleyerek tam entegre, gerçek zamanlı bir analitik arayüzün yayına alınmasını sağladı.",
+        ],
+        technologies: ["PHP", "SQL", "REST APIs", "Docker", "Nginx"],
+      },
+      {
+        title: "Yazılım Mühendisliği Stajyeri",
+        company: "Agartha Teknoloji",
+        logo: "/images/agartha_dark.png",
+        period: "Nis 2026 – Haz 2026",
+        location: "Ankara, Türkiye",
+        type: "internship",
+        description: [
+          "Operasyonel veri pipeline'larını izlemek amacıyla kurumsal ERP sistem mimarilerini ve iş mantığı iş akışlarını uçtan uca analiz etti.",
+          "Görsel analitik dashboard'larını beslemek için optimize edilmiş SQL sorguları kullanarak veritabanından uçak filosu kayıtlarını çekti ve toplulaştırdı.",
+          "Frontend UI bileşenlerini iyileştirdi ve gerçek zamanlı filo metriklerini ve takip verilerini görüntülemek için interaktif grafikler entegre etti.",
+        ],
+        technologies: ["SQL", "ERP Sistemleri", "JavaScript", "Veri Görselleştirme"],
+      },
+      {
         title: "Full-Stack Developer Stajyeri",
         company: "Atakum Belediyesi",
+        logo: "/images/atakum-belediyesi.jpg",
         period: "Haz 2025 – Ağu 2025",
         location: "Samsun",
         type: "internship",
@@ -104,6 +135,7 @@ export const tr: Translations = {
       {
         title: "Yazılım Geliştirici Stajyeri",
         company: "SecureComputing",
+        logo: "/images/secure-computing.jpg",
         period: "Mar 2025 – Haz 2025",
         location: "Uzaktan",
         type: "internship",
@@ -122,10 +154,12 @@ export const tr: Translations = {
   personalInfo: {
     aboutMe: "Hakkımda",
     name: "Gamze Aydın",
-    title: "Bilgisayar Mühendisliği Öğrencisi • Full-Stack Geliştirici",
-    bio: `Ankara Medipol Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak, yazılım geliştirme süreçlerinde modern teknolojileri kullanarak ölçeklenebilir ve kullanıcı odaklı çözümler üretmeye odaklanıyorum. Full-stack geliştirme disipliniyle, frontend tarafında React ve JavaScript ile interaktif arayüzler; backend tarafında ise C# ve Node.js ile yüksek performanslı mimariler inşa ediyorum.
+    title: "Bilgisayar Mühendisliği Öğrencisi • Full-Stack & Backend Geliştirici",
+    bio: `Ankara Medipol Üniversitesi Bilgisayar Mühendisliği öğrencisi olarak, yazılım geliştirme süreçlerinde modern teknolojileri kullanarak ölçeklenebilir ve kullanıcı odaklı çözümler üretmeye odaklanıyorum. Full-stack geliştirme disipliniyle, frontend tarafında React ve JavaScript ile interaktif arayüzler; backend tarafında ise C#, Node.js ve PHP ile yüksek performanslı mimariler inşa ediyorum.
 
-Teorik mühendislik temellerimi, gerçek dünya problemlerine odaklanan stok takip sistemleri ve e-ticaret platformu projeleriyle pratiğe dökme konusunda deneyim sahibiyim. Yazılım geliştirme yaşam döngüsünde (SDLC) temiz kod prensiplerini ve sürdürülebilirliği temel alarak, teknolojik dönüşümlere hızla adapte olan bir vizyonla ilerliyorum.`,
+En son olarak Jotform'da Backend Developer stajını tamamladım (Ağustos–Eylül 2026). Bu süreçte bir Payment Analytics Dashboard geliştirdim: RESTful API mimarisi tasarladım, PHP generator tabanlı batch processing ile bellek ve timeout sorunlarını çözdüm, EAV yapılı tablolarda karmaşık SQL sorgularını optimize ettim ve güvenli bir streaming CSV export pipeline'ı hayata geçirdim.
+
+Kurumsal ERP entegrasyonları, e-ticaret platformları, stok takip sistemleri ve analitik dashboard'lar aracılığıyla mühendislik temellerini gerçek dünya sistemlerine uygulamada uygulamalı deneyime sahibim. Yazılım geliştirme yaşam döngüsünde (SDLC) temiz kod prensiplerini ve sürdürülebilirliği temel alarak, teknolojik dönüşümlere hızla adapte olan bir vizyonla ilerliyorum.`,
     socialLinks: "Sosyal Medya",
     contactInfo: "İletişim Bilgileri",
     email: "E-posta",
@@ -610,6 +644,64 @@ Teorik mühendislik temellerimi, gerçek dünya problemlerine odaklanan stok tak
           ],
         },
       },
+      jotformPaymentAnalytics: {
+        key: "jotformPaymentAnalytics",
+        title: "Merchant Ödeme Analitiği & Raporlama Motoru",
+        description: [
+          "Gerçek zamanlı KPI'ları takip eden kurumsal ödeme analitik dashboard'unu besleyen yüksek verimli backend servisi",
+          "Ağır iş yüklerinde OOM çökmelerini ve timeout darboğazlarını azaltmak için chunk'lı batch veri alımı (yield generatörler, 500'lük offsetler)",
+          "Karmaşık EAV şema kısıtlamalarını çözmek için özel in-memory aggregation'lar ve çoklu filtre ID set kesişimleri",
+          "UTF-8 BOM kodlaması ve formula injection koruması ile güvenli streaming CSV/Excel export pipeline'ı",
+        ],
+        categories: ["backend"],
+        technologies: ["PHP", "SQL", "REST APIs", "Docker", "Nginx"],
+        youtubeUrl: "https://www.youtube.com/watch?v=xt8xkwTfjB4",
+        images: ["https://img.youtube.com/vi/xt8xkwTfjB4/hqdefault.jpg"],
+        demoUrl: "https://www.youtube.com/watch?v=xt8xkwTfjB4",
+        githubUrl: null,
+        featured: true,
+        status: "completed",
+        detailedInfo: {
+          overview:
+            "Jotform'da kurumsal ödeme analitiği dashboard'unu besleyen yüksek verimli bir backend servisi geliştirildi; çok para birimli ve coğrafi kırılımlar genelinde Brüt/Net Gelir, Ortalama Sipariş Değeri (AOV) ve Dönüşüm Oranları dahil gerçek zamanlı KPI'lar takip edildi.",
+          features: [
+            "8 temel RESTful analitik endpoint tasarlandı ve implement edildi: summary, timeseries, breakdown, conversion ve daha fazlası",
+            "Ağır iş yüklerinde bellek tükenme çökmelerini ve timeout darboğazlarını PHP yield generatör tabanlı 500'lük chunk'larla batch veri alımı uygulayarak çözüldü",
+            "Pahalı çok tablolu JOIN'ler kullanmadan dizinsiz EAV tablolarındaki karmaşık şema kısıtlamaları, özel in-memory aggregation ve çoklu filtre ID set kesişimleriyle çözüldü",
+            "Uluslararası karakterler için UTF-8 BOM kodlaması ve elektronik tablo formula injection koruması içeren güvenli, streaming CSV/Excel veri export pipeline'ı oluşturuldu",
+            "Frontend mühendisleriyle standartlaştırılmış JSON kontratları tanımlamak için yakın işbirliği yapıldı; çok para birimli ve coğrafi kırılımlar genelinde saniyenin altında yanıt süreleri sağlandı",
+          ],
+          techDetails: {
+            Backend: [
+              "PHP",
+              "PHP Generator'lar (yield)",
+              "RESTful API Mimarisi",
+              "Batch Processing",
+              "In-Memory Aggregation",
+            ],
+            Veritabanı: [
+              "SQL",
+              "EAV Şeması",
+              "Sorgu Optimizasyonu",
+              "Çoklu Filtre ID Set Kesişimi",
+            ],
+            "Dışa Aktarma & Güvenlik": [
+              "Streaming CSV Export",
+              "UTF-8 BOM Kodlama",
+              "Formula Injection Koruması",
+              "Excel/Sheets Uyumluluğu",
+            ],
+            DevOps: ["Docker", "Nginx"],
+          },
+          learningOutcomes: [
+            "Gerçek zamanlı analitik dashboard'lar için ölçeklenebilir RESTful API mimarileri tasarlama",
+            "PHP generator tabanlı batch processing kullanarak yüksek hacimli veri sistemlerinde bellek ve timeout darboğazlarını çözme",
+            "In-memory aggregation stratejileri kullanarak EAV yapılandırılmış tablolarda karmaşık SQL sorgularını optimize etme",
+            "Kodlama koruması ve injection önlemi ile güvenli veri export pipeline'ları oluşturma",
+            "API kontratlarını tanımlamak ve entegre full-stack özellikler sunmak için çapraz fonksiyonel işbirliği yapma",
+          ],
+        },
+      },
     },
     projectList: [],
   },
@@ -630,6 +722,7 @@ Teorik mühendislik temellerimi, gerçek dünya problemlerine odaklanan stok tak
           { name: ".NET 8" },
           { name: "ASP.NET Core" },
           { name: "C#" },
+          { name: "PHP" },
           { name: "Node.js" },
           { name: "Express.js" },
           { name: "Clean Architecture" },
@@ -686,6 +779,7 @@ Teorik mühendislik temellerimi, gerçek dünya problemlerine odaklanan stok tak
         icon: "🗄️",
         skills: [
           { name: "SQL Server" },
+          { name: "MySQL" },
           { name: "Entity Framework" },
           { name: "SQLite" },
         ],
@@ -697,6 +791,7 @@ Teorik mühendislik temellerimi, gerçek dünya problemlerine odaklanan stok tak
         skills: [
           { name: "Docker" },
           { name: "Docker Compose" },
+          { name: "Nginx" },
           { name: "Git & GitHub" },
           { name: "Postman" },
         ],

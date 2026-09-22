@@ -86,8 +86,39 @@ export const en: Translations = {
     technologies: "Technologies",
     positions: [
       {
+        title: "Backend Developer Intern",
+        company: "Jotform",
+        logo: "/images/jotform.jpg",
+        period: "Aug 2026 – Sep 2026",
+        location: "Ankara, Turkey",
+        type: "internship",
+        description: [
+          "End-to-End Analytics Dashboard: Designed the RESTful API architecture for a Payment Analytics Dashboard and developed 8 core analytics endpoints end-to-end — including summary, timeseries, breakdown, and conversion.",
+          "Batch Processing & Scalability: Engineered a PHP generator (yield) based batch ingestion mechanism (500-item chunks) to resolve Out-of-Memory (OOM) crashes and HTTP 504 timeout bottlenecks on high-volume merchant accounts, keeping memory consumption constant while minimizing API latency.",
+          "Query & Schema Optimization: Replaced expensive cross-table JOIN operations on millions-of-rows EAV tables with in-memory aggregation and multi-filter ID set intersections (intersectOrderIdSets), building optimized data retrieval pipelines.",
+          "Data Export & Security: Built a streaming CSV export engine for financial data Excel/Sheets transfers; implemented sanitization against CSV formula-injection vulnerabilities and UTF-8 BOM encoding protection.",
+          "Cross-Functional Collaboration: Defined synchronized API contracts with the frontend team, ensuring the successful go-live of a fully integrated, real-time analytics interface.",
+        ],
+        technologies: ["PHP", "SQL", "REST APIs", "Docker", "Nginx"],
+      },
+      {
+        title: "Software Engineering Intern",
+        company: "Agartha Technology",
+        logo: "/images/agartha_dark.png",
+        period: "Apr 2026 – Jun 2026",
+        location: "Ankara, Turkey",
+        type: "internship",
+        description: [
+          "Analyzed enterprise ERP system architectures and business logic workflows end-to-end to trace operational data pipelines.",
+          "Extracted and aggregated aircraft fleet records from the database using optimized SQL queries to feed visual analytics dashboards.",
+          "Refined frontend UI components and integrated interactive charts to display real-time fleet metrics and tracking data.",
+        ],
+        technologies: ["SQL", "ERP Systems", "JavaScript", "Data Visualization"],
+      },
+      {
         title: "Full-Stack Developer Intern",
         company: "Atakum Municipality",
+        logo: "/images/atakum-belediyesi.jpg",
         period: "Jun 2025 – Aug 2025",
         location: "Samsun",
         type: "internship",
@@ -104,6 +135,7 @@ export const en: Translations = {
       {
         title: "Software Developer Intern",
         company: "SecureComputing",
+        logo: "/images/secure-computing.jpg",
         period: "Mar 2025 – Jun 2025",
         location: "Remote",
         type: "internship",
@@ -122,10 +154,12 @@ export const en: Translations = {
   personalInfo: {
     aboutMe: "About Me",
     name: "Gamze Aydın",
-    title: "Computer Engineering Student • Full-Stack Developer",
-    bio: `As a Computer Engineering student at Ankara Medipol University, I focus on building scalable and user-centric solutions using modern technologies in software development processes. With a full-stack development discipline, I build interactive interfaces with React and JavaScript on the frontend; and high-performance architectures with C# and Node.js on the backend.
+    title: "Computer Engineering Student • Full-Stack & Backend Developer",
+    bio: `As a Computer Engineering student at Ankara Medipol University, I focus on building scalable and user-centric solutions using modern technologies. With a full-stack development discipline, I build interactive interfaces with React and JavaScript on the frontend; and high-performance architectures with C#, Node.js, and PHP on the backend.
 
-I have experience in applying my theoretical engineering foundations to real-world problems through stock tracking systems and e-commerce platform projects. Advancing with a vision that rapidly adapts to technological transformations, I base my work on clean code principles and sustainability throughout the software development lifecycle (SDLC).`,
+Most recently, I completed a Backend Developer internship at Jotform (Aug–Sep 2026), where I engineered a Payment Analytics Dashboard — designing RESTful APIs, solving memory and timeout bottlenecks with PHP generator-based batch processing, optimizing complex SQL queries on EAV-structured tables, and building a secure streaming CSV export pipeline.
+
+I have hands-on experience applying engineering fundamentals to real-world systems through enterprise ERP integrations, e-commerce platforms, stock tracking systems, and analytics dashboards. I advance with a vision that rapidly adapts to technological transformations, grounding my work in clean code principles and sustainability throughout the software development lifecycle (SDLC).`,
     socialLinks: "Social Links",
     contactInfo: "Contact Information",
     email: "Email",
@@ -609,6 +643,64 @@ I have experience in applying my theoretical engineering foundations to real-wor
           ],
         },
       },
+      jotformPaymentAnalytics: {
+        key: "jotformPaymentAnalytics",
+        title: "Merchant Payment Analytics & Reporting Engine",
+        description: [
+          "High-throughput backend service powering an enterprise payment analytics dashboard tracking real-time KPIs",
+          "Chunked batch data retrieval (yield generators with 500-item offsets) to mitigate OOM crashes and timeout bottlenecks",
+          "Custom in-memory aggregations and multi-filter ID set intersections to resolve complex EAV schema constraints",
+          "Secure streaming CSV/Excel export pipeline with UTF-8 BOM encoding and formula injection protection",
+        ],
+        categories: ["backend"],
+        technologies: ["PHP", "SQL", "REST APIs", "Docker", "Nginx"],
+        youtubeUrl: "https://www.youtube.com/watch?v=xt8xkwTfjB4",
+        images: ["https://img.youtube.com/vi/xt8xkwTfjB4/hqdefault.jpg"],
+        demoUrl: "https://www.youtube.com/watch?v=xt8xkwTfjB4",
+        githubUrl: null,
+        featured: true,
+        status: "completed",
+        detailedInfo: {
+          overview:
+            "Engineered a high-throughput backend service powering an enterprise payment analytics dashboard at Jotform, tracking real-time KPIs including Gross/Net Revenue, Average Order Value (AOV), and Conversion Rates across multi-currency and geospatial breakdowns.",
+          features: [
+            "Designed and implemented 8 core RESTful analytics endpoints: summary, timeseries, breakdown, conversion, and more",
+            "Mitigated memory exhaustion crashes and timeout bottlenecks under heavy workloads by implementing chunked batch data retrieval (PHP yield generators with 500-item offsets)",
+            "Resolved complex schema constraints across unindexed EAV tables without expensive multi-table joins using custom in-memory aggregations and multi-filter ID set intersections",
+            "Built a secure, streaming CSV/Excel data export pipeline featuring UTF-8 BOM encoding for international characters and spreadsheet formula injection protection",
+            "Partnered closely with frontend engineers to define standardized JSON contracts, ensuring sub-second response times across multi-currency and geospatial breakdowns",
+          ],
+          techDetails: {
+            Backend: [
+              "PHP",
+              "PHP Generators (yield)",
+              "RESTful API Architecture",
+              "Batch Processing",
+              "In-Memory Aggregation",
+            ],
+            Database: [
+              "SQL",
+              "EAV Schema",
+              "Query Optimization",
+              "Multi-filter ID Set Intersection",
+            ],
+            "Export & Security": [
+              "Streaming CSV Export",
+              "UTF-8 BOM Encoding",
+              "Formula Injection Protection",
+              "Excel/Sheets Compatibility",
+            ],
+            DevOps: ["Docker", "Nginx"],
+          },
+          learningOutcomes: [
+            "Designing scalable RESTful API architectures for real-time analytics dashboards",
+            "Solving memory and timeout bottlenecks in high-volume data systems using PHP generator-based batch processing",
+            "Optimizing complex SQL queries on EAV-structured tables using in-memory aggregation strategies",
+            "Building secure data export pipelines with encoding protection and injection prevention",
+            "Collaborating cross-functionally to define API contracts and deliver integrated full-stack features",
+          ],
+        },
+      },
     },
     projectList: [],
   },
@@ -629,6 +721,7 @@ I have experience in applying my theoretical engineering foundations to real-wor
           { name: ".NET 8" },
           { name: "ASP.NET Core" },
           { name: "C#" },
+          { name: "PHP" },
           { name: "Node.js" },
           { name: "Express.js" },
           { name: "Clean Architecture" },
@@ -685,6 +778,7 @@ I have experience in applying my theoretical engineering foundations to real-wor
         icon: "🗄️",
         skills: [
           { name: "SQL Server" },
+          { name: "MySQL" },
           { name: "Entity Framework" },
           { name: "SQLite" },
         ],
@@ -696,6 +790,7 @@ I have experience in applying my theoretical engineering foundations to real-wor
         skills: [
           { name: "Docker" },
           { name: "Docker Compose" },
+          { name: "Nginx" },
           { name: "Git & GitHub" },
           { name: "Postman" },
         ],

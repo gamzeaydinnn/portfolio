@@ -20,6 +20,7 @@ import { PortfolioNavigation } from "@/components/layout/PortfolioNavigation";
 import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import { withBasePath } from "@/lib/path";
 
 /**
  * Deneyim tipine göre badge stilini belirler
@@ -126,7 +127,18 @@ export default function ExperiencePage() {
 
                           {/* Şirket/Organizasyon Adı */}
                           <CardItem translateZ={20} className="w-full">
-                            <p className="text-lg md:text-xl text-purple-200 mb-4 flex items-center gap-2">
+                            <p className="text-lg md:text-xl text-purple-200 mb-4 flex items-center gap-3">
+                              {(position as { logo?: string }).logo && (
+                                // eslint-disable-next-line @next/next/no-img-element
+                                <img
+                                  src={withBasePath((position as { logo?: string }).logo!)}
+                                  alt={`${position.company} logo`}
+                                  width={44}
+                                  height={44}
+                                  className="rounded-xl object-contain bg-white/10 p-1 border border-purple-500/20"
+                                  style={{ minWidth: 44, minHeight: 44 }}
+                                />
+                              )}
                               {position.company}
                             </p>
                           </CardItem>

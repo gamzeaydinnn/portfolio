@@ -51,6 +51,7 @@ const CATEGORIES: CategoryFilter[] = ["all", "web", "backend", "mobile"];
  * Featured ve status'a göre öncelik
  */
 const PROJECT_ORDER = [
+  "jotformPaymentAnalytics",
   "katanaLucaErp",
   "ecommerceOrderPlatform",
   "stokTrackingSystem",

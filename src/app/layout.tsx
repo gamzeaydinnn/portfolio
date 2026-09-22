@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   authors: [{ name: 'Gamze Aydın' }],
   creator: 'Gamze Aydın',
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: '/portfolio/logo.png',
+    shortcut: '/portfolio/logo.png',
+    apple: '/portfolio/logo.png',
   },
   openGraph: {
     type: 'website',
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     description: 'Kişisel portfolyo websitem',
     images: [
       {
-        url: '/logo.png',
+        url: '/portfolio/logo.png',
         width: 512,
         height: 512,
         alt: 'Gamze Aydın Logo',
@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Gamze Aydın - Portfolio',
     description: 'Kişisel portfolyo websitem',
-    images: ['/logo.png'],
+    images: ['/portfolio/logo.png'],
   },
   robots: {
     index: true,

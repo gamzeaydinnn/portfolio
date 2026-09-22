@@ -210,8 +210,8 @@ export default function PersonalInfoPage() {
                     <div className="w-full mt-8 relative z-10">
                       <HoverBorderGradient
                         as="a"
-                        href={withBasePath("/GamzeCV.pdf")}
-                        download="Gamze_Aydin_CV.pdf"
+                        href={withBasePath("/GamzeAydinCV.pdf")}
+                        download="GamzeAydinCV.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                         containerClassName="rounded-full w-fit"

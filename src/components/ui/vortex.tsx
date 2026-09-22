@@ -179,23 +179,25 @@ export const Vortex = (props: VortexProps) => {
     };
 
     const renderGlow = () => {
+      const { width, height } = getViewSize();
       ctx.save();
       ctx.filter = "blur(8px) brightness(200%)";
       ctx.globalCompositeOperation = "lighter";
-      ctx.drawImage(canvas, 0, 0);
+      ctx.drawImage(canvas, 0, 0, width, height);
       ctx.restore();
 
       ctx.save();
       ctx.filter = "blur(4px) brightness(200%)";
       ctx.globalCompositeOperation = "lighter";
-      ctx.drawImage(canvas, 0, 0);
+      ctx.drawImage(canvas, 0, 0, width, height);
       ctx.restore();
     };
 
     const renderToScreen = () => {
+      const { width, height } = getViewSize();
       ctx.save();
       ctx.globalCompositeOperation = "lighter";
-      ctx.drawImage(canvas, 0, 0);
+      ctx.drawImage(canvas, 0, 0, width, height);
       ctx.restore();
     };
 
